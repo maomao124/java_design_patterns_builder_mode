@@ -13,15 +13,26 @@ package mao.builder_mode;
  * Description(描述)： 指挥者类
  */
 
+
 public class Director
 {
     private final Builder builder;
 
+    /**
+     * Instantiates a new Director.
+     *
+     * @param builder the builder
+     */
     public Director(Builder builder)
     {
         this.builder = builder;
     }
 
+    /**
+     * Construct bike.
+     *
+     * @return the bike
+     */
     public Bike construct()
     {
         builder.buildFrame();
